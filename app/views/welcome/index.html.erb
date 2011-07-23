@@ -1,0 +1,10 @@
+<h1>Twitter読み上げ</h1>
+<p>入力したtwitter IDの最新ツイートを日本語で読み上げます</p>
+<% form_tag :action => 'update' do %>
+<b>twitter ID:</b>
+<%= text_field_tag "id" %>
+<%= submit_tag "読み上げMP3ダウンロード"  %>
+<% end %>
+<hr>
+<p>存在しないIDを入力するとよく分からないことを吐きます＞＜誰か助けて</p>
+
